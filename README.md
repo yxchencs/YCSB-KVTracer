@@ -48,7 +48,7 @@ for workload_subdir in $TARGET_WORKLOAD_DIR; do
 done
 ```
 
-# Move the trace_run.txt file to the workload directory **Note: This file is for Linux and Mac only, for Windows, change `. /bin/ycsb.sh` to `. /bin/ycsb.bat`**
+**Note: This file is for Linux and Mac only, for Windows, change `. /bin/ycsb.sh` to `. /bin/ycsb.bat`**
 
 
 ## Self-configuration tutorial for YCSB compiled KVTracer module (optional)
@@ -62,7 +62,7 @@ The following steps have been performed on this repository and are available for
 
 > Windows and Mac systems in the modification of the file will be opened with Notepad to modify the file can be.
 
-### 1. 克隆 `YCSB`
+### 1. Clone `YCSB`
 
 ```shell
 git clone https://github.com/brianfrankcooper/YCSB.git
@@ -133,7 +133,7 @@ As indicated in the `+` line.
 +   kvtracer:site.ycsb.db.KVTracerClient
 ```
 
-### 7. 编译
+### 7. Compile
 
 ```shell
 mvn -pl kvtracer -am clean package
