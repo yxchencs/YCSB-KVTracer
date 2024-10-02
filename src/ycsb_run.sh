@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/bin/bash
 # This script is used to batch generate trace_run.txt for the corresponding workload.
 # This script is in the YCSB directory, running on Linux.
 # How to run:
@@ -10,8 +10,8 @@
 shopt -s globstar
 
 # Define the root path of the target workload directory
-
 TARGET_WORKLOAD_DIR="workloads/**"
+
 # Iterate through each subdirectory of the workloads folder
 for workload_subdir in $TARGET_WORKLOAD_DIR; do
     if [ -d "$workload_subdir" ]; then
